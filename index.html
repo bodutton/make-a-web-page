@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - Stage 1 Submission</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!DOCTYPE html>
+<!-- This is an HTML comment, it is invisible on the page-->
+<head><!-- <head> element contains information invisible on the page. -->
+  <title>Bo's Notes</title> <!-- Every tag has an opening and a closing tag.-->
+  <link rel="stylesheet" type="text/css" href="notesstyle.css">
+</head>  
+   <div class="banner">
+      <a href="http://s304.photobucket.com/user/BoDutton/media/eyesbanner_zpsh7ahpgq8.jpg.html" target="_blank">
+       <img src="http://i304.photobucket.com/albums/nn167/BoDutton/eyesbanner_zpsh7ahpgq8.jpg"  alt=" photobanner_zpsh7ahpgq8.jpg"/>
+      </a>
+    </div>
+ <div class="notes">
+   <h1> Intro to Programming Nanodegree Notes</h1>
+	  <h2>Contents</h2>
+      <div class="flex-container">
+             <div class="flex-item-1">  
+               <h3>Unit 1: <br> Basics of the Web and HTML</h3>
+                   <ul>
+                      <li>How the Web Works</li>
+                      <li>HTML</li>
+                      <li>Tags and Elements</li>
+                      <li>List of Beginner's Tags</li>
+                      <li>!DOCTYPE HTML</li>
+                    </ul>
+                  <br>
+             </div>
+             <div class="flex-item-2">
+                <h3>Unit 2:<br> HTML Structure</h3>
+                     <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Developer Tools</li>
+                        <li>Trees of Squares</li>
+                        <li>The DOM</li>
+                      </ul>
+                    <br>
+             </div>
+                <div class="flex-item-3">
+                  <h3>Unit 3:<br> Adding Style with CSS</h3>
+                      <ul>
+                        <li>What is CSS?</li>
+                        <li>Syntax and Rules</li>
+                        <li>Avoiding Repitition</li>
+                    </ul>
+                </div>
+             </div>
+            <br>
+
+  <div class="Units">
+       <h2 id="Unit-1">Unit 1: Basics of the Web and HTML</h2>
+         <div class="concept-title"><h3>How the Web Works</h3></div>
+            <div class="concept-description">
+                <p> The Web, or <em>internet</em>, is a global network of  
+                    computers that connects billions of users worldwide. 
+                    Invented in the 90s, the Web has grown to host over 30 billion pages. The vast majority of the Web is made up of inter-linked hypertext documents written in a language called <b>Hypertext Markup Language</b>, or <b>HTML.</b> When you visit a website (www.example.com) you're actually sending an <em>HTTP request</em> from your computer to a <em>server</em> who in turn finds the appropriate HTML document and sends it back to your computer where your <em>web browser</em> interprets and displays it. 
+                    <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/e-48329854/m-48480496">This video</a>
+                    does a good job of explaining more.
+               </p>
+           </div>
+       </div>
+<br>
+       <div class="concept" id="lesson-1-2">
+         <div class="concept-title"><h3>HTML</h3></div>
+           <div class="content-description">
+                <p>
+                   HTML <em>Hypertext Markup Language</em> makes up most of the content on the web. HTML dictates <b>Text Content</b>, what you <em>see</em>, <b>Markup</b>,what it looks like <em>behind the scenes</em> <b>References</b> to other documents, <em>images and videos</em> <b>Links</b> to other pages in the form of <em>hyperlinks</em>.
+                   <br>Plain text equals plain text, <b><em>markups</em></b> do everything else.
+                   <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/m-48724340">This
+                   video</a> gives a good overview.
+                </p>
+           </div>
+       </div>
+<br>
+       <div class="concept" id="lesson-1-3">
+         <div class="concept-title"><h3>Tags and Elements</h3></div>
+            <div class="content-description">
+                <p>
+                  HTML is written in sentences or <em>elements</em> composed of <em>tags </em>and text. <b>Tags</b> are the markers that tell the text or source how to act or look.<br>
+                  <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/m-48723444">This video</a> explains the
+                  distinction well.<br>
+                  There's a tag for anything you want to accomplish just a quick google search away. All tags fall into one of two categories based on how they interact with the page, <em>inline or block.</em> 
+               </p>
+            </div>
+       </div>
+<br>
+       <div class="concept" id=:lesson-1-4>
+         <div class="concept-title"><h3>List of Beginner's Tags</h3></div>
+           <div class="content-description">
+                  Beginners Tags:<br>
+                   <ul>
+                     <li><b>Inline</b></li>
+                       <li> 
+                           <li>v b v  = Bold</li>
+                           <li>v em v = Italics</li>
+                           <li>v a v = Anchor (add hyperlinks, needs attribute like href)</li>
+                           <li>v img v = Image (no closing tag, needs source and alt text)</li>
+                           <li>v br v = Line Break (no closing tag)</li>
+                           <li>v q v  = Short Quotation</li>
+                           <li>v strong v = Defines Important Text</li>
+
+                     <li><b>Block</b></li>
+                        <li>
+                           <li>v p v = Paragraph (can give heigth and width)</li>
+                           <li>v body v = Body</li>
+                           <li>v form v = User Input Field</li>
+
+                   </ul>           
+            </div>
+       </div>   
+<br>
+       <div class="concept" id="lesson1-5">
+         <div class="concept-title"><h3>!DOCTYPE HTML</h3></div>
+           <div class="concept description">
+
+                  <b>Simple HTML Document Structure:</b>
+                     <ul>
+                        <li>Doctype Tag - v !doctype html v</li>
+                        <li>HTML opening tag - v html v </li>
+                        <li>head opening tag - v head v </li>
+                        <li>title - v title v TITLE! v /title v</li>
+                        <li>/head closing tag - v /head v </li>
+                        <li>body opening tag - v body v</li>
+                        <li>majority of content - v b v content v /b v</li>
+                        <li>body closing tag - v /body v</li>
+                        <li>/HTML closing tag - v /html v</li>
+                     </ul>
+
+           </div>     
+       </div>
+<br>
+  <div class="Unit">
+       <h2 id="unit-2">Unit 2: HTML Structure</h2>
+       <div class="concept" id="unit-2-1">
+         <div class="concept-title"><h3>HTML</h3></div>
+            <div class="concept-description">
+              <p>
+                We already know that HTML is the standard markup language used to create web pages. HTML provides the structure and the content for the pages we see on the web. It's its own language with syntax and rules. Each document or page is made up of lines of code called elements marked with tags explaining what it's supposed to do. <br>
+                Think of a website as a house. Think about the structure, the wood beams holding it all up. Think about and layout of the house, where all the rooms are and how many bathrooms it has. Think about the wiring and plumbing. Thats HTML. 
+               </p>
+           </div>
+       </div>
+    <br>
+       <div class="concept" id="unit-2-2">
+         <div class="concept-title"><h3>CSS</h3></div>
+            <div class="concept-description">
+              <p>
+                If HTML is the structure of the house, <b>CSS</b> is the style and decoration. Type of furniture, color of bedrooms, wall hangings, etc. CSS stands for <em>Cascading Style Sheets</em> and it's used for describing the look and formatting of a document written in a markup language. Uses it's own language and syntax to alter font size and color, background position, etc. <br>
+                CSS gives programmers a way to control the style of related HTML elements. You can dictate commands like "make all class='concept-title' a certain color and size" and manage the look and style of your website. 
+               </p>
+           </div>
+       </div>
+    <br>
+       <div>
+       	   <div class="concept" id="unit-2-3">
+             <div class="concept title"><h3>Developer Tools</h3></div>
+       	   <div class="concept description">
+       	     <p>
+       	       The Developer Tools in Google Chrome give us great insight into how a page is structured and provides us not only with detailed information about how a web page is structured, styled, etc. but also empowers us with the ability to alter it. We can add/delete lines of code, adjust pixel ratios, colors, text, images. We can move the existing panes around. It turns any website into a sandbox. 
+       	     </p>
+       	     <p>
+       	       To access Developer Tools: Google Chrome > Any website > Customization Tap (square with 3 bars in the top right-hand corner) > More Tools > Developer Tools<br> OR <br> Right Click any link or image > Inspect Element 
+       	     </p>
+       	     <p>
+       	        HTML elements are either <em>inline</em> or <em>block</em>. Block elements form an "invisible box" around the content inside of them. 
+       	     </p>
+       	   </div>
+       	   </div>
+       </div>
+    <br>
+       <div>
+          <div class="concept" id="unit-2-4">
+            <div class="concept title"><h3>Trees of Squares</h3></div>
+          <div class="concept description">
+            <p>
+              There are two things to remember right off the bat that will make evertything easier. <br>
+              <b>Rule #1:</b> <em>Every things is a box.</em>Every element of a website is a box and often it's contained within another box. This is accomplished by putting elements inside of eachother in the code. Like you're placing your ships before a game of Battleship, you can place different elements around the page using the grid of pixels to arrange and line them up.<br>
+              <b>Rule #2:</b> <em>The structure of any website will resemble a big branch</em> growing directly out away from the trunk of the tree. Every website is designed in a branching series of boxes  that unfold like nesting dolls from biggest to smallest. <br>
+              <a href="https://youtu.be/y5NbZSvn5N8">This video</a> explains it perfectly. 
+            </p>
+          </div>
+          </div>
+        </div>
+    <br>
+        <div>
+          <div class="concept" id="unit-2-5">
+            <div class="concept title"><h3>THE DOM</h3></div>
+          <div class="concept description">
+            <p>
+            	The Document Object Model, more commonly known as <b>DOM</b>, is a cross platform and language independant convention for representing and interacting with objects in HTML and other markup languages. The nodes of every structure are organized in a tree-like structure called the <b>DOM TREE</b> 
+            	<a href="https://youtu.be/Nj5RCaE_b00">Here's a great</a> on breaking down a website and turning it into a DOM Tree. 
+            </p>
+          </div>
+          </div>
+        </div>
+  </div>
+  <br>
+     <div class="Units">
+       <h2 id="Unit-3">Unit 3: Adding Style with CSS</h2>
+        <div class="concept-title"><h3>What is CSS?</h3></div>
+            <div class="concept-description">CSS, or <em>Cascading Style Sheets</em>, is code written to control the style of HTML elements. Think of it as the decorations or the style of your house.
+            </div><br>
+        <div class="concept title"><h3>Syntax and Rules</h3></div>
+            <div class="concept description">In CSS you will first write a selector that defines what elements of the page a particular style will apply to. Choose one HTML tag or class and alter the behavior of all matching tags on the page. If, for example, you wanted to alter all of the text in div class="units" you would type "div.units {and fill in your commands here}" All phrases are written as follows {attribute:value;} Eveything tagged as a "unit" will now act the same way. To refer to a "class" just add a period and the class name (ex. class=footer becomes .footer{:;})
+            </div><br>
+        <div class="concept title"><h3>Avoiding Repitition</h3></div>
+            <div class="concept description">Avoiding Repitition is essential in writing good code for a myraid of reasons. Here are three:<br>
+              <br><b>Avoiding Errors</b>-An automated system is far less likely to fail. Most mistakes are due to human error, remove it.<br>
+              <br><b>Consistency</b>-By working from generic rules down to specifics, the chances that your website will maintain the same style and sizes throughout are much higher. If everything's linkes it's harder for one small part to get out of whack.<br>
+              <br><b>Efficiency</b>-Any time you can cut out repitition, meanial tasks, time wasters, etc. you will save time, and we all know that time is money.
+            </div>
+        </div>
+      </div>
+
+</body>
+
+</html>
